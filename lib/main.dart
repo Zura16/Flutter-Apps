@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-// Static widget cuz we won't need many changes after
+// Static widget cuz we won't need many changes  after
 class  MyApp extends StatelessWidget {
   const MyApp ({super.key });
 
@@ -18,7 +18,7 @@ class  MyApp extends StatelessWidget {
     return  MaterialApp(
       // we don't need the debug banner
       debugShowCheckedModeBanner: false,
-      // setting the  home screen to scaffold
+      // setting the  home screen to scaffold . it gives us the app bar and other basic feaautres like the body
       home:Scaffold (
         appBar:  AppBar(
           title: const Text('Business Card'),
@@ -26,14 +26,14 @@ class  MyApp extends StatelessWidget {
         body: const Center (
           child:Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            // column widget so everuthing is vertical
+            // column widget so everuthing  is vertical
             children: <Widget>[
               Icon(Icons.email,size:90 ),
-              // adding empty space
+              // adding  empty space
               SizedBox(height:10 ),
-              // text widget
+              //textwidget
               Text(
-                'Full Name' ,
+                'Aalind Kale' ,
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight:FontWeight.bold ,
@@ -43,7 +43,7 @@ class  MyApp extends StatelessWidget {
               SizedBox (height:5),
 
               Text(
-                'Title',
+                'Software Engineer',
                 style:  TextStyle(
                   fontSize:18,
                   color: Colors.black54,
@@ -51,7 +51,7 @@ class  MyApp extends StatelessWidget {
               ),
 
               SizedBox(height: 50) ,
-
+              // Making 3 rows to take the information of phone number, sociall media and th email id .
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:  <Widget> [
@@ -77,7 +77,7 @@ class  MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget> [
-                  Icon(Icons.email_outlined),
+                  Icon(Icons. email_outlined),
                   SizedBox(width:  10),
                   Text('kaleaalind7@gmail.com'),
                 ],
